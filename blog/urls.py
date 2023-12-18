@@ -5,7 +5,7 @@ from .views import (BlogView, BlogTagView, BlogCommentView, TopBlogView, Similar
 
 router = DefaultRouter()
 router.register('blogs', BlogView, basename='blog_list')
-router.register('blogs-tags', BlogTagView, basename='blog_tag_list')
+
 router.register('blogs-comments', BlogCommentView, basename='blog_comment_list')
 router.register('top-blogs', TopBlogView, basename='top_blog_list')
 router.register('similar-blogs', SimilarBlogView, basename='similar_blog_list')
